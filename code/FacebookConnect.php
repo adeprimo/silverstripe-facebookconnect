@@ -285,6 +285,7 @@ class FacebookConnect extends Extension {
 				
 				$member = Member::currentUser();
 				if($member) $member->logOut();
+                Director::redirect('/');
 			}
 		}
 		
